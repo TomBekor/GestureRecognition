@@ -1,0 +1,11 @@
+OldToolsPredictions/
+OurVideos/
+P016_balloon2_bar_plot.png
+P016_balloon2_model_predictions.npy
+ToolsCode/__pycache__
+ToolsCode/drafts
+__pycache__/
+models/APAS
+models/TwoInToolsOut-94
+summaries/
+wandb/
