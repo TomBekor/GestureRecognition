@@ -150,11 +150,7 @@ for split_num in list_of_splits:
                                 normalization=args.normalization,kinematics=args.kinematics,task=args.task)
     eval_dict ={"features_path":features_path,"actions_dict_gestures": actions_dict_gestures, "actions_dict_tools":actions_dict_tools, "device":device, "sample_rate":sample_rate,"eval_rate":eval_rate,
                 "gt_path_gestures":gt_path_gestures, "gt_path_tools_left":gt_path_tools_left, "gt_path_tools_right":gt_path_tools_right,"task":args.task}
-    # UNCOMMENT:
-    # eval_results, train_results = trainer.train(model_dir, batch_gen, num_epochs=num_epochs, batch_size=bz, learning_rate=lr,eval_dict=eval_dict,args=args)
-    
-    # REMOVE:
-    trainer.evaluate(eval_dict, batch_gen)
+    eval_results, train_results = trainer.train(model_dir, batch_gen, num_epochs=num_epochs, batch_size=bz, learning_rate=lr,eval_dict=eval_dict,args=args)
 
     if not debugging:
         eval_results = pd.DataFrame(eval_results)
