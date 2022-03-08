@@ -1,0 +1,11 @@
+# Make sure to have a GPU with at least 8GB memory that supports CUDA.
+pytorch==1.10.0
+numpy==1.19.2
+pandas==1.1.5
+torchvision==0.11.1
+opencv-python==4.5.4.58
+scipy==1.5.2
+wandb==0.12.10
+matplotlib==3.3.4
+sklearn==0.24.2
+tqdm==4.62.3
